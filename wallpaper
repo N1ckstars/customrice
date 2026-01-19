@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+echo "WAYLAND DISPLAY=$WAYLAND_DISPLAY"
+echo "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR"
+
+if [ -z "$1" ]; then
+	echo "Usage: wallpaper <path_to_image>"
+	exit 1
+fi
+
+IMG="$1"
+
+echo "Setting wallpaper to $IMG..."
+swww img "$IMG" -t wipe
+
+echo "Setting colour scheme..."
+wal -i "$IMG" -o "/home/nicky/.config/wal/hooks/run-pywal-scripts.sh"
+
+if [ -f "$HOME/.cache/wal/colors.sh" ]; then
+	source "$HOME/.cache/wal/colors.sh"
+fi
+
