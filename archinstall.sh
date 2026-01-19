@@ -23,3 +23,13 @@ ln -s ~/customrice/hooks ~/.config/wal
 
 mkdir ~/.local/bin
 ln -s ~/customrice/wallpaper ~/.local/bin
+
+sudo rm /etc/xdg/foot/foot.ini
+sudo ln -s ~/customrice/foot.ini /etc/xdg/foot/
+
+#Setting up omz
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+rm ~/.zshrc
+ln -s ~/customrice/.zshrc /
