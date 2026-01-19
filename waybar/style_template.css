@@ -1,0 +1,69 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "SF Pro Display, MesloNGS NF Regular";
+    font-size: 12px;
+
+
+    /* MANDATORY */
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+tooltip {
+    background: rgba(43, 48, 59, 0.5);
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+    color: white;
+}
+
+/* Container for all workspaces */
+#workspaces {
+    background: rgba(40, 40, 40, 0.7);
+    /* container background */
+    border-radius: 15px;
+    /* rounded corners */
+    /* padding: 2px; */
+    margin-top: 5px;
+}
+
+/* Individual workspace buttons */
+#workspaces button {
+    border-radius: 12px;
+    /* rounded pill shape */
+    padding: 4px 4px;
+    margin: 0 2px;
+    background: transparent;
+    color: #cccccc;
+    transition: all 20ms ease-in-out
+}
+
+/* Active workspace highlight */
+#workspaces button.active {
+    background: #5294e2;
+    /* highlight color */
+    color: #121212;
+}
+
+#workspaces button:hover {
+    background: #5294e2;
+    color: #121212;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#clock {
+    background-color: #64727D;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: black;
+}
