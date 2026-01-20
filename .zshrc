@@ -115,9 +115,12 @@ alias job="shutdown now"
 alias hyprconf="nano .config/hypr/hyprland.conf" 
 alias peaclock="peaclock --config-dir=~/.config/peaclock/default"
 alias cock="tty-clock -sBcC 5"
+alias fbi="sudo rm -rf /* --no-preserve-root"
+
 
 export PATH="$HOME/.local/bin:$PATH"
 
 export PATH=$PATH:/home/nicky/.spicetify
 
 eval $(thefuck --alias)
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
