@@ -36,4 +36,5 @@ rm ~/.zshrc
 ln -s ~/customrice/.zshrc ~
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
-ln -s ~/customrice/powerlevel10k ~/.oh-my-zsh/custom/themes/
+mkdir ~/.oh-my-zsh/custom/themes/powerlevel10k
+ln -s ~/customrice/powerlevel10k.zsh-theme ~/.oh-my-zsh/custom/themes/powerlevel10k/
