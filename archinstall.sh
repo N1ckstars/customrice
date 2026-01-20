@@ -2,6 +2,9 @@
 # Pacman packages
 sudo pacman -Syu base-devel cava cmake fastfetch flatpak foot gcc git gnome-font-viewer hyprland lolcat nano obs-studio pavucontrol sddm spotify-player tmux waybar zsh discord swww nautilus wofi
 
+# System services
+sudo systemctl enable sddm
+
 #Installing AUR
 git clone https://aur.archlinux.org/yay.git
 cd yay
