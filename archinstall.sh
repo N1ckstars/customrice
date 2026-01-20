@@ -1,6 +1,6 @@
 
 # Pacman packages
-sudo pacman -Syu base-devel cava cmake fastfetch flatpak foot gcc git gnome-font-viewer hyprland lolcat nano obs-studio pavucontrol sddm spotify-player tmux waybar zsh discord swww nautilus wofi
+sudo pacman -Syu base-devel cava cmake fastfetch flatpak foot gcc git gnome-font-viewer hyprland lolcat nano obs-studio pavucontrol sddm spotify-player tmux waybar zsh discord swww nautilus wofi xdg-desktop-portal-hyprland
 
 #Installing AUR
 git clone https://aur.archlinux.org/yay.git
