@@ -33,10 +33,11 @@ sudo ln -s ~/customrice/foot.ini /etc/xdg/foot/
 
 # Setting up omz
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-rm ~/.zshrc
-ln -s ~/customrice/.zshrc ~
 
 # pain in the ass p10k moment
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
-ln -s ~/customrice/powerlevel10k ~/.oh-my-zsh/custom/themes/
+
 ln -s ~/customrice/.p10k.zsh ~/
+ln -s ~/customrice/powerlevel10k ~/.oh-my-zsh/custom/themes/
+rm ~/.zshrc
+ln -s ~/customrice/.zshrc ~
