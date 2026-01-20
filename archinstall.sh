@@ -1,6 +1,6 @@
 
 # Pacman packages
-sudo pacman -Syu base-devel cava cmake fastfetch flatpak foot gcc git gnome-font-viewer hyprland lolcat nano obs-studio pavucontrol sddm spotify-player tmux waybar zsh discord swww nautilus wofi xdg-desktop-portal-hyprland thefuck
+sudo pacman -Syu base-devel cava cmake fastfetch flatpak foot gcc git gnome-font-viewer hyprland lolcat nano obs-studio pavucontrol sddm spotify-player tmux waybar zsh discord swww nautilus wofi xdg-desktop-portal-hyprland thefuck pipewire code
 
 # System services
 sudo systemctl enable sddm
@@ -38,3 +38,4 @@ ln -s ~/customrice/.zshrc ~
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 mkdir ~/.oh-my-zsh/custom/themes/powerlevel10k
 ln -s ~/customrice/powerlevel10k ~/.oh-my-zsh/custom/themes/
+ln -s ~/customrice/.p10k.zsh ~/
